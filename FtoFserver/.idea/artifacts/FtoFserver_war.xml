@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="FtoFserver:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/FtoFserver_war</output-path>
+    <root id="archive" name="FtoFserver_war.war">
+      <element id="artifact" artifact-name="FtoFserver:war exploded" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/web/WEB-INF/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

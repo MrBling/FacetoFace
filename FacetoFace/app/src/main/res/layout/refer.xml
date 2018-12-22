@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingTop="20sp"
+            android:text="查询班级:"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/referclass"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:entries="@array/Classes"></Spinner>
+
+        <EditText
+            android:id="@+id/refertime"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:id="@+id/refer"
+            />
+
+
+    </LinearLayout>
+
+ <RadioGroup
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/attention"
+     android:orientation="horizontal"
+     >
+     <RadioButton
+         android:id="@+id/attend"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="25dp"
+         android:text="到课"
+         android:checked="true"/>
+
+     <RadioButton
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textSize="25dp"
+         android:text="缺课"/>
+ </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <lecho.lib.hellocharts.view.PieChartView
+            android:layout_width="wrap_content"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:id="@+id/pcv"/>
+
+    </LinearLayout>L
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"></ListView>
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

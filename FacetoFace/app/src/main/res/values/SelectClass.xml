@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Classes">
+        <item>ruan1</item>
+        <item>ruan2</item>
+    </string-array>
+</resources>
